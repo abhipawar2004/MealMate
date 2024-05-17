@@ -1,0 +1,24 @@
+def most_visited_node(n, m, endNode):
+    visits = [0] * (n + 1)
+
+    for i in range(m - 1):
+        start = endNode[i]
+        end = endNode[i + 1]
+        if start <= end:
+            for node in range(start, end + 1):
+                visits[node] += 1
+        else:
+            for node in range(start, n + 1):
+                visits[node] += 1
+            for node in range(1, end + 1):
+                visits[node] += 1
+
+    max_visits = max(visits)
+    most_visited_nodes = [node for node in range(1, n + 1) if visits[node] == max_visits]
+
+    return min(most_visited_nodes)
+
+n = int(input("Enter n value"))
+m = int(input("Enter m value"))
+endNode = list(map(int,input().split(" ")))
+print(most_visited_node(n, m, endNode))

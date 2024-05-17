@@ -71,6 +71,7 @@ class _MealAppState extends State<MealApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Meal-Mate',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(color: Colors.pink),
         primarySwatch: Colors.pink,

@@ -25,12 +25,12 @@ class MyDrawer extends StatelessWidget {
             height: 120,
             width: double.infinity,
             padding: const EdgeInsets.all(20),
-            color: Colors.amber,
+            
             alignment: Alignment.centerLeft,
             child: const Text(
               'Cooking Up!',
               style: TextStyle(
-                color: Colors.pink,
+                
                 fontSize: 30,
                 fontWeight: FontWeight.w900,
               ),

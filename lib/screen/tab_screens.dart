@@ -48,7 +48,7 @@ class _TabScreenState extends State<TabScreen> {
       drawer: MyDrawer(),
       body: _pages[_selectedindex]['page'],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.pink,
+        
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.amber,
         onTap: _selectedPage,

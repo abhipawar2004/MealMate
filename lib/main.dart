@@ -73,7 +73,7 @@ class _MealAppState extends State<MealApp> {
       debugShowCheckedModeBanner: false,
       title: 'Meal-Mate',
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(color: Colors.pink),
+        appBarTheme: const AppBarTheme(),
         primarySwatch: Colors.pink,
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
